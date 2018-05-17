@@ -1,272 +1,1203 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Tejas Sarma</title>
-
-    <!-- Bootstrap Core CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+        html,
+        body,
+        header,
+        .view {
+            height: 100%;
+        }
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+        @media (max-width: 740px) {
+            html,
+            body,
+            header,
+            .view {
+                height: 1000px;
+            }
+        }
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        @media (min-width: 800px) and (max-width: 850px) {
+            html,
+            body,
+            header,
+            .view {
+                height: 650px;
+            }
+        }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331 !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Tejas Sarma</a>
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="https://sarmatejas1006.github.io/">
+            <strong><b>TEJAS SARMA</b></strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <i class="mr-3"></i>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about"><i class="mr-2"></i><strong><b>Education</b></strong><i class="mr-2"></i><i class="fa fa-user mr-2"></i>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience"><i class="fa fa-briefcase mr-2"></i><b><strong>Experience</strong></b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills"><i class="fas fa-wrench mr-2"></i><b><strong>Skills</strong></b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects"><i class="fab fa-codepen mr-2"></i><b><strong>Projects</strong></b></a>
+                </li>
+                <li><i class="mr-2"></i></li>
+                <li class="nav-item">
+                    <a href="https://github.com/sarmatejas1006" class="nav-link border border-light rounded">
+                        <i class="fab fa-github mr-2"></i><b><strong>GitHub</strong></b><i class="fa"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <i class="mr-3"></i>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.linkedin.com/in/tejas1006" class="nav-link border border-light rounded">
+                        <i class="fab fa-linkedin mr-2"></i><b><strong>LinkedIn</strong></b><i class="fa"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Full Page Intro -->
+<div class="view full-page-intro" style="background-image: url('https://wallpapers.pub/web/wallpapers/chicago-illinois-the-city-wallpaper/4096x2160.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+        <!-- Content -->
+        <div class="container">
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <!--Grid row-->
+            <div class="row wow fadeIn" id="email">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4 white-text text-center text-md-left">
+
+                    <img src="img/profile.jpg " class="img-thumbnail w-100 p-1 mx-auto d-block col-md-10">
+                    <br/>
+                    <h3 class="display-5 font-weight-bold">Hi! I am Tejas Sarma.</h3>
+
+                    <hr class="hr-light">
+
+                    <p>
+                        <strong><b><i>I try to make data confess, and machines think.</i></b></strong>
+
+                        <strong>I am a Computer Science graduate student at the University of Illinois at Chicago, and I am currently seeking internship/co-op opportunities for Fall 2018.</strong>
+                    </p>
+
+                    <a href="#" class="btn btn-blue btn-lg"><strong><b>View My Resume</b></strong>
+                        <i class="fa fa-file-pdf ml-2"></i>
+                    </a>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-xl-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!-- Form -->
+                            <form name="">
+                                <!-- Heading -->
+                                <h5 class="dark-grey-text text-center">
+                                    <strong>Send me an email if you would like to connect with me!</strong>
+                                </h5>
+                                <hr>
+
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" id="form3" class="form-control">
+                                    <label for="form3">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-at prefix grey-text"></i>
+                                    <input type="text" id="form2" class="form-control">
+                                    <label for="form2">Your email address</label>
+                                </div>
+
+                                <div class="md-form">
+                                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                    <textarea type="text" id="form8" class="md-textarea"></textarea>
+                                    <label for="form8">Your message</label>
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-blue font-weight-bold"><strong><b>Send</b></strong><i class="fa fa-paper-plane ml-2"></i>
+                                    </button>
+                                </div>
+
+                            </form>
+                            <!-- Form -->
+
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+
+                </div>
+                <!--Grid column-->
+
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <!--Grid row-->
+
+        </div>
+        <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+</div>
+<!-- Full Page Intro -->
+
+<!--Main layout-->
+<main>
+    <div class="container">
+
+        <!--Section: Education-->
+        <section id="about">
+
+            <h2 class="my-5 h2 text-center">EDUCATION</h2>
+
+            <!--First row-->
+            <div class="row features-small mb-5 mt-3 wow fadeIn">
+
+                <div class="col-md-12">
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-university fa-3x indigo-text"></i>
+                        </div>
+                        <div class="col-11">
+                            <h4 class="feature-title"><strong><b>Computer Science, Master of Science (M.S.)</b></strong></h4>
+                            <h5 class="feature-title"><strong>University of Illinois at Chicago (United States of America)</strong></h5>
+                            <h6 class="feature-title"><strong><b>August 2017 - December 2018 (Expected)</b></strong></h6>
+                            <h5 class="feature-title"><i class="fa fa-bookmark mr-2 indigo-text"></i><strong>GPA: <b>3.7</b>(4.0)</strong></h5>
+                            <p class="dark-grey-text"><strong><b>Relevant Coursework:</b> Data Mining and Text Mining, Artificial Intelligence: Methods and Applications, Artificial Intelligence, Computer Algorithms, Human Computer Interaction, Database Systems</strong>
+                            </p>
+                            <div style="height:15px"></div>
+                        </div>
+                    </div>
+                    <!--/First row-->
+
+                    <!--Second row-->
+                    <div class="row">
+                        <div class="col-1">
+                            <i class="fa fa-university fa-3x indigo-text"></i>
+                        </div>
+                        <div class="col-11">
+                            <h4 class="feature-title"><strong><b>Electronics Engineering, Bachelor of Engineering (B.E.)</b></strong></h4>
+                            <h5 class="feature-title"><strong>University of Mumbai (India)</strong></h5>
+                            <h6 class="feature-title"><strong><b>July 2013 - June 2017</b></strong></h6>
+                            <p class="dark-grey-text"><strong><b>Relevant Coursework:</b> Artificial Intelligence, Object oriented programming, Advanced Computer Networks</strong>
+                            <p class="dark-grey-text"><strong><b>Workshops:</b> Cloud Computing, Indian Institute of Technology, Delhi </strong>
+                                <br/>
+                            <h5 class="feature-title"><i class="fa fa-trophy mr-2 indigo-text"></i><strong><b>Sir Ratan Tata Technical Scholarship for Engineering Students</b></strong></h5>
+                            </p>
+                            <div style="height:15px"></div>
+                        </div>
+                    </div>
+                    <!--/Second row-->
+                </div>
+                <!--/First column-->
+
+            </div>
+            <!--/First row-->
+
+        </section>
+        <!--Section: Education-->
+
+        <hr class="my-5">
+
+        <!--Section: Experience-->
+        <section id="experience">
+            <div class="container">
+                <div class="page-header">
+                    <h2 class="my-5 h2 text-center">EXPERIENCE</h2>
+                </div>
+                <ul class="timeline">
                     <li>
-                        <a href="#about">About</a>
+                        <div class="timeline-badge"><p>MAY 2018</p></div>
+                        <div class="timeline-panel">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fab fa-researchgate fa-3x indigo-text"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h4 class="feature-title"><strong><b>Graduate Student Researcher</b></strong></h4>
+                                    <h5 class="feature-title"><strong>Artificial Intelligence and Robotics Laboratory </strong></h5>
+                                    <h6 class="feature-title"><strong><b>University of Illinois at Chicago</b></strong></h6>
+                                    <h6 class="feature-title"><strong><b>May 2018 - Present</b></strong></h6>
+                                    <p class="dark-grey-text"><strong><b>Mentor:</b> Prof. Brian Ziebart </strong>
+                                    <p class="dark-grey-text"><strong><b>Tasks:</b>
+                                        <ul style="list-style-type:none">
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Working with the Baxter Robot</li>
+                                        </ul>
+                                    </strong>
+                                    </p>
+                                    <div style="height:15px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge">FEB 2018</div>
+                        <div class="timeline-panel">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fas fa-chalkboard-teacher fa-3x indigo-text"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h4 class="feature-title"><strong><b>Graduate Teaching Assistant </b></strong></h4>
+                                    <h5 class="feature-title"><strong>CS 422: User Interface Design and Development</strong></h5>
+                                    <h6 class="feature-title"><strong><b>University of Illinois at Chicago</b></strong></h6>
+                                    <h6 class="feature-title"><strong><b>Feb 2018 - May 2018</b></strong></h6>
+                                    <p class="dark-grey-text"><strong><b>Department Supervisor:</b> Prof. Robert Kenyon </strong>
+                                    <p class="dark-grey-text"><strong><b>Tasks:</b>
+                                        <ul style="list-style-type:none">
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Coursework management</li>
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Creating and managing tests</li>
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Grading tests and assignments</li>
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Classroom studio sessions</li>
+                                        </ul>
+                                    </strong>
+                                    </p>
+                                    <div style="height:15px"></div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a href="">Resume</a>
+                        <div class="timeline-badge danger">FEB 2016</i></div>
+                        <div class="timeline-panel">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fab fa-researchgate fa-3x indigo-text"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h4 class="feature-title"><strong><b>Student Participant and Course Co-creator</b></strong></h4>
+                                    <h5 class="feature-title"><strong>Stanford Scholar</strong></h5>
+                                    <h6 class="feature-title"><strong><b>Stanford University</b></strong></h6>
+                                    <h6 class="feature-title"><strong><b>Feb 2016 – Dec 2017</b></strong></h6>
+                                    <p class="dark-grey-text"><strong><b>Mentor:</b> Dr. Rajan Vaish </strong>
+                                    <p class="dark-grey-text"><strong><b>Contributions:</b>
+                                        <ul style="list-style-type:none">
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Admin for creation of the online course: “Data Science and Machine Learning using Python”.</li>
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Co-created short talks on CS papers on Machine Learning, HCI, Crowdsourcing, Computer Vision, and Security.</li>
+                                        </ul>
+                                    </strong>
+                                    </p>
+                                    <div style="height:15px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge danger">MAY 2015</i></div>
+                        <div class="timeline-panel">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fab fa-researchgate fa-3x indigo-text"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h4 class="feature-title"><strong><b>Student Developer and Researcher </b></strong></h4>
+                                    <h5 class="feature-title"><strong>Stanford CrowdResearch (Daemo Crowdsourcing Platform)</strong></h5>
+                                    <h6 class="feature-title"><strong><b>Stanford University</b></strong></h6>
+                                    <h6 class="feature-title"><strong><b>May 2015 – Dec 2017 </b></strong></h6>
+                                    <p class="dark-grey-text"><strong><b>Mentor:</b> Prof. Michael Bernstein, Dr. Rajan Vaish </strong>
+                                    <p class="dark-grey-text"><strong><b>Contributions:</b>
+                                        <ul style="list-style-type:none">
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Member of initial front end design and development team</li>
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Contributed to platform pilot studies, developing the “Boomerang taskfeed mechanism”, and “Open-Gov model”</li>
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Member of team responsible for designing and developing constitution model for Daemo</li>
+                                        </ul>
+                                    </strong>
+                                    </p>
+                                    <div style="height:15px"></div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a href="#research">Research</a>
-                    </li>
-                    <li>
-                        <a href="#participant">Collective Research</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
+                        <div class="timeline-badge info">DEC 2014</div>
+                        <div class="timeline-panel">
+                            <div class="row">
+                                <div class="col-2">
+                                    <i class="fab fa-android fa-3x indigo-text"></i>
+                                </div>
+                                <div class="col-10">
+                                    <h4 class="feature-title"><strong><b>Android Developer Intern</b></strong></h4>
+                                    <h5 class="feature-title"><strong>Wegilant, Mumbai</strong></h5>
+                                    <h6 class="feature-title"><strong><b>Dec 2014 – Jan 2015</b></strong></h6>
+                                    <p class="dark-grey-text"><strong><b>Role:</b>
+                                        <ul style="list-style-type:none">
+                                            <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i>Android Developer Intern at Wegilant, a company that provided Security systems and infrastructure for organizations</li>
+                                        </ul>
+                                    </strong>
+                                    </p>
+                                    <div style="height:15px"></div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container https://www.facebook.com/z.space.time.continuum-->
-    </nav>
 
+        </section>
+        <!--Section: Experience-->
 
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
+        <hr class="my-5">
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                    <img src="img/profile.jpg" class="img-rounded" class="img-responsive" height="300dp">
-                        <h1>Tejas Sarma</h1>
-                        <h3>Undergraduate student at University of Mumbai</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://github.com/sarmatejas1006" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="https://in.linkedin.com/in/tejas1006" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/SarmaTejas" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/z.space.time.continuum" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                        </ul>
+        <!--Section: Skills-->
+        <section id="skills">
+
+            <h2 class="my-5 h3 text-center">SOFTWARE SKILLS</h2>
+
+            <!--First row-->
+            <div class="row features-small mt-5 wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-python fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2 pl-3">
+                            <h5 class="feature-title font-bold mb-1">Python</h5>
+                        </div>
                     </div>
+                    <!--/Grid row-->
                 </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-python fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2 pl-3">
+                            <h5 class="feature-title font-bold mb-1">TensorFlow</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-python fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2 pl-3">
+                            <h5 class="feature-title font-bold mb-1">NLTK</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-python fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2 pl-3">
+                            <h5 class="feature-title font-bold mb-1">Scikit Learn</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
             </div>
+            <!--/First row-->
 
-        </div>
-        <!-- /.container -->
+            <!--Second row-->
+            <div class="row features-small mt-4 wow fadeIn">
 
-    </div>
-    <!-- /.intro-header -->
-
-    <!-- RESEARCH -->
-
-    <a  name="research"></a>
-     <div class="content-section-b">
-        <div class="container">
-            <h1>RESEARCH</h1><br/>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">  
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Stock Price Prediction using Neural Networks<br/>(JULY 2016 - )</h2>
-                    <p class="lead">Prediction of opening stock prices for select companies and commodities listed under the NY Stock Exchange, based on their stock share value history, using Neural Networks.</p>
-                    <!--<p><a href="">coming soon</a></p>-->
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-cuttlefish fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">C</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
                 </div>
-                <div class="col-lg-7">
-                    <img class="img-responsive" src="img/r1.jpg" alt="">
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-java fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">Java</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
                 </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-html5 fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">HTML</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-css3 fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">CSS</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
             </div>
+            <!--/Second row-->
 
-        </div>
-        <!-- /.container -->
+            <!--Third row-->
+            <div class="row features-small mt-4 wow fadeIn">
 
-    </div>
-    <!-- /.content-section-a -->
-
-    <!--COLLECTIVE RESEARCH-->
-
-    <a  name="participant"></a>
-     <div class="content-section-b">
-        <div class="container">
-            <h1>COLLECTIVE RESEARCH</h1><br/>
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-    <div class="content-section-a">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">  
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Stanford Scholar Program <br/>(FEB 2016 - )</h2>
-                    <p class="lead">Stanford Scholar is a new initiative by Stanford researchers to make research more accessible by facilitating people to collaborate and share their knowledge with others, and creating short research talks on diverse topics.</p>
-                    <p><a href="http://scholar.stanford.edu/">www.scholar.stanford.edu</a></p>
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-bold fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">Bootstrap</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
                 </div>
-                <div class="col-lg-7">
-                    <img class="img-responsive" src="img/p1.jpg" alt="">
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-robot fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">ROS</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
                 </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-android fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">Android</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-database fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">MySQL</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
             </div>
+            <!--/Third row-->
 
-        </div>
-        <!-- /.container -->
+            <br/>
 
-    </div>
-    <!-- /.content-section-a -->
+            <h2 class="my-5 h3 text-center">TECHNICAL SKILLS</h2>
 
-    <div class="content-section-b">
+            <!--First row-->
+            <div class="row features-small mt-5 wow fadeIn">
 
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Stanford Crowd Research Collective<br/>(MAY 2015 - )</h2>
-                    <p class="lead">Crowd Research is an experimental initiative by professor and students at Stanford to recognize the potential of upcoming student researchers and exploring the possibility of massive research collaboration between the two. It is a first of its kind research-at-scale initiative in the world. We're a group of about 500 students, professionals and researchers from all around the world, working together by engineering, building, designing and making Daemo a reality. We call ourselves, "Stanford Crowd Research Collective". The project is organized by Prof. Michael Bernstein at Stanford HCI and his students. </p>
-                    <p><a href="http://crowdresearch.stanford.edu">www.crowdresearch.stanford.edu</a></p>
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-chart-bar fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2 pl-3">
+                            <h5 class="feature-title font-bold mb-1">Statistical Machine Learning</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
                 </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/p2.jpg" alt="">
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-chart-pie fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2 pl-3">
+                            <h5 class="feature-title font-bold mb-1">Data Analysis</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
                 </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-chart-line fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2 pl-3">
+                            <h5 class="feature-title font-bold mb-1">Data Mining</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-language fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2 pl-3">
+                            <h5 class="feature-title font-bold mb-1">Natural Language Processing</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
             </div>
+            <!--/First row-->
 
-        </div>
-        <!-- /.container -->
+            <!--Second row-->
+            <div class="row features-small mt-4 wow fadeIn">
 
-    </div>
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-robot fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">Artificial Intelligence</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
 
-    <a  name="contact"></a>
-    <div class="banner">
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fab fa-leanpub fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">Reinforcement Learning</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
 
-        <div class="container">
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-robot fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">Robotics</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
 
+                <!--Grid column-->
+                <div class="col-xl-3 col-lg-6">
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-users fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-10 mb-2">
+                            <h5 class="feature-title font-bold mb-1">Crowdsourcing (HCI)</h5>
+                        </div>
+                    </div>
+                    <!--/Grid row-->
+                </div>
+                <!--/Grid column-->
+
+            </div>
+            <!--/Second row-->
+
+            <br/>
+        </section>
+        <!--Section: Skills-->
+
+        <hr class="mb-5">
+
+        <!--Section: Main info-->
+        <section class="mt-5 wow fadeIn" id="projects">
+
+            <h2 class="my-5 h3 text-center">PROJECTS</h2>
+
+            <!--Grid row 1-->
             <div class="row">
-                   <div class="col-sm-9">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://github.com/sarmatejas1006" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="https://in.linkedin.com/in/tejas1006" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/SarmaTejas" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/z.space.time.continuum" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <img src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2017/08/Slider-Sentiment-468x340.png" class="img-fluid z-depth-1-half h-100" alt="">
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="h3 mb-3">Aspect Based Sentiment Classification</h3>
+                    <p><strong>Aspect Based Sentiment Classification of food and text reviews using Scikit Learn</strong></p>
+                    <p><strong>Mentor: Prof. Bing Liu</strong></p>
+
+                    <hr>
+
+                    <p><strong><b>Salient Features:</b></strong></p>
+                    <ul style="list-style-type:none">
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>Used 13 different classifier models</b></strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>Average accuracy achieved: 73%</b></strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>F-score: 0.83 (+ class), 0.77 (- class)</b></strong> </li>
                     </ul>
+                    <!-- Main heading -->
+
+                    <hr>
+
+                    <p><strong>Technologies used</strong></p>
+
+                    <ul style="list-style-type:none">
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Python</strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Scikit Learn</strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>NLTK</strong> </li>
+                    </ul>
+
+                    <hr>
+
+                    <p><strong>Keywords: Text Mining, Sentiment Analysis, Opinion Mining</strong></p>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row 1-->
+
+            <br/>
+            <hr>
+            <br/>
+
+            <!--Grid row 2-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="h3 mb-3">MonoRL: Reinforcement Learning Agent for Intelligent Monopoly</h3>
+                    <p><strong>Reinforcement Learning agent for playing Monopoly, modelled as a Markov decision Process (MDP)</strong></p>
+                    <p><strong>Mentor: Prof. Plamen Petrov</strong></p>
+
+                    <hr>
+
+                    <p><strong><b>Salient Features:</b></strong></p>
+                    <ul style="list-style-type:none">
+                        <li><strong><b>Implemented 3 agents:</b></strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>ɛ-Greedy Q(λ)-Learning Agent</b></strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>Fixed Policy Agent</b></strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>Random Agent</b></strong></li>
+                    </ul>
+                    <!-- Main heading -->
+
+                    <hr>
+
+                    <p><strong><b>Results:</b></strong></p>
+
+                    <ul style="list-style-type:none">
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Won 61/100 games</strong> </li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Relative Assets: 43%</strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Peak Relative Money: 47%</strong></li>
+                    </ul>
+
+                    <hr>
+
+                    <p><strong>Keywords: Reinforcement Learning, Artificial Intelligence, Game Theory, Non-Deterministic Problems</strong></p>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <img src="https://github.com/pmpailis/rl-monopoly/blob/master/Monopoly/Monopoly/Images/Monopoly_board.jpg?raw=true" class="img-fluid z-depth-1-half w-100" alt="">
+
+                </div>
+                <!--Grid column-->
+
+
+            </div>
+            <!--Grid row 2-->
+
+            <hr>
+            <br/>
+
+            <!--Grid row 3-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <img src="https://cdn-images-1.medium.com/max/762/1*xR4m0oOKz_jRgQU4Oge53g.jpeg" class="img-fluid z-depth-1-half h-100" alt="">
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="h3 mb-3">Triton: Predictive Assistance for Amateur Stock Traders </h3>
+                    <p><strong>7-day predictions of opening stock prices for select companies listed under the NYSE</strong></p>
+
+                    <hr>
+
+                    <p><strong><b>Salient Features:</b></strong></p>
+                    <ul style="list-style-type:none">
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>Used 15 years stock data for 10 different companies</b></strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>7-day predictions of opening stock prices</b></strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>Accuracy: 98% on test data</b></strong> </li>
+                    </ul>
+                    <!-- Main heading -->
+
+                    <hr>
+
+                    <p><strong>Technologies used</strong></p>
+
+                    <ul style="list-style-type:none">
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Python</strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Scikit Learn</strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Matplotlib</strong> </li>
+                    </ul>
+
+                    <hr>
+
+                    <p><strong>Keywords: Data Mining, Predictive Analysis, Supervised Learning, Mathematical Modelling</strong></p>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row 3-->
+
+            <br/>
+            <hr>
+            <br/>
+
+            <!--Grid row 4-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="h3 mb-3">Segregator Robot</h3>
+                    <p><strong>Segregator Robot using Firebird V Robotic Research Platform</strong></p>
+                    <p><strong>Categorizes and transports objects to assigned drop-off areas (similar to dock cranes)</strong></p>
+
+                    <hr>
+
+                    <p><strong><b>Salient Features:</b></strong></p>
+                    <ul style="list-style-type:none">
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>Categorizes objects based on shape and color</b></strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong><b>Transports objects to assigned drop-off areas, by navigating path grid</b></strong></li>
+                    </ul>
+                    <!-- Main heading -->
+
+                    <hr>
+
+                    <p><strong>Technologies used</strong></p>
+
+                    <ul style="list-style-type:none">
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>C</strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Atmega controller</strong></li>
+                        <li><i class="fa fa-arrow-alt-circle-right mr-2 indigo-text"></i><strong>Matlab</strong> </li>
+                    </ul>
+
+                    <hr>
+
+                    <p><strong>Keywords: Robotics, Algorithms, Computer Vision</strong></p>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <img src="http://img.youtube.com/vi/ewkOIvOZDrw/0.jpg" class="img-fluid z-depth-1-half h-100" alt="">
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row 4-->
+
+        </section>
+        <!--Section: Main info-->
+
+        <hr class="my-5">
+
+        <!--Section: Main features & Quick Start-->
+        <section id="publications">
+
+            <h3 class="h3 text-center mb-5">PAPERS AND PUBLICATIONS</h3>
+
+            <!--Card row 0-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body mb-3">
+                            <!--Title-->
+                            <h4 class="card-title mt-2 pb-1">
+                                <strong>Designing A Constitution for a Self-Governing Crowdsourcing Marketplace</strong>
+                            </h4>
+                            <!--Text-->
+                            <h6 class="mt-2 pb-2">
+                                <strong>Collective Intelligence Conference 2017</strong>
+                            </h6>
+                            <a href="http://wtf.tw/ref/whiting.pdf" class="btn btn-blue btn-md"><strong><b>Link to Paper</b></strong><i class="fas fa-link ml-2"></i></a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
                 </div>
             </div>
+            <!--Card row 0-->
 
-        </div>
-        <!-- /.container -->
+            <br/>
+
+            <!--Card row 1-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body mb-3">
+                            <!--Title-->
+                            <h4 class="card-title mt-2 pb-1">
+                                <strong>Prototype Tasks: Improving Crowdsourcing Results through Rapid, Iterative Task Design</strong>
+                            </h4>
+                            <!--Text-->
+                            <h6 class="mt-2 pb-2">
+                                <strong>AAAI Conference on Human Computation and Crowdsourcing (HCOMP) 2017</strong>
+                            </h6>
+                            <a href="https://arxiv.org/pdf/1707.05645.pdf" class="btn btn-blue btn-md"><strong><b>Link to Paper</b></strong><i class="fas fa-link ml-2"></i></a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+            </div>
+            <!--Card row 1-->
+
+            <br/>
+
+            <!--Card row 2-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body mb-3">
+                            <!--Title-->
+                            <h4 class="card-title mt-2 pb-1">
+                                <strong>Crowd Guilds: Worker-led Reputation and Feedback on Crowdsourcing Platforms</strong>
+                            </h4>
+                            <!--Text-->
+                            <h6 class="mt-2 pb-2">
+                                <strong>ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW) 2017</strong>
+                            </h6>
+                            <a href="https://arxiv.org/pdf/1611.01572.pdf" class="btn btn-blue btn-md"><strong><b>Link to Paper</b></strong><i class="fas fa-link ml-2"></i></a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+            </div>
+            <!--Card row 2-->
+
+            <br/>
+
+            <!--Card row 3-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body mb-3">
+                            <!--Title-->
+                            <h4 class="card-title mt-2 pb-1">
+                                <strong>The Daemo Crowdsourcing Marketplace</strong>
+                            </h4>
+                            <!--Text-->
+                            <h6 class="mt-2 pb-2">
+                                <strong>ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW) 2017</strong>
+                            </h6>
+                            <a href="https://dl.acm.org/citation.cfm?id=3023270" class="btn btn-blue btn-md"><strong><b>Link to Paper</b></strong><i class="fas fa-link ml-2"></i></a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+            </div>
+            <!--Card row 3-->
+
+            <br/>
+
+            <!--Card row 4-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body mb-3">
+                            <!--Title-->
+                            <h4 class="card-title mt-2 pb-1">
+                                <strong>Boomerang: Rebounding the Consequences of Reputation Feedback on Crowdsourcing Platforms</strong>
+                            </h4>
+                            <!--Text-->
+                            <h6 class="mt-2 pb-2">
+                                <strong>ACM User lnterface Software and Technoogy Symposium (UIST) 2016</strong>
+                            </h6>
+                            <a href="https://dl.acm.org/citation.cfm?id=2984542" class="btn btn-blue btn-md"><strong><b>Link to Paper</b></strong><i class="fas fa-link ml-2"></i></a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+            </div>
+            <!--Card row 4-->
+
+            <br/>
+
+            <!--Card row 5-->
+            <div class="row wow fadeIn" data-wow-delay="0.2s">
+                <div class="col-md-12">
+                    <!--Card-->
+                    <div class="card">
+
+                        <!--Card content-->
+                        <div class="card-body mb-3">
+                            <!--Title-->
+                            <h4 class="card-title mt-2 pb-1">
+                                <strong>Daemo: A Self-Governed Crowdsourcing Marketplace</strong>
+                            </h4>
+                            <!--Text-->
+                            <h6 class="mt-2 pb-2">
+                                <strong>ACM User lnterface Software and Technoogy Symposium (UIST) 2015</strong>
+                            </h6>
+                            <a href="http://hci.stanford.edu/publications/2015/crowdresearch/daemo-uist.pdf" class="btn btn-blue btn-md"><strong><b>Link to Paper</b></strong><i class="fas fa-link ml-2"></i></a>
+                        </div>
+
+                    </div>
+                    <!--/.Card-->
+                </div>
+            </div>
+            <!--Card row 5-->
+
+            <hr class="my-5">
+
+        </section>
+        <!--Section: Main features & Quick Start-->
 
     </div>
-    <!-- /.banner -->
+</main>
+<!--Main layout-->
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Back to Top</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#participant">Research</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!--Footer-->
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!--Call to action-->
+    <div class="pt-4">
+        <a class="btn btn-outline-white" href="#email" target="_self" role="button"><strong><b>EMAIL ME</b></strong>
+            <i class="fas fa-envelope ml-2"></i>
+        </a>
+    </div>
+    <!--/.Call to action-->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <hr class="my-2">
 
+    <!-- Social icons -->
+    <div class="pb-4">
+        <a href="https://github.com/sarmatejas1006" target="_blank">
+            <i class="fab fa-github fa-3x mr-3"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/tejas1006/" target="_blank">
+            <i class="fab fa-linkedin fa-3x mr-3"></i>
+        </a>
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+        Tutorial:
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+</script>
 </body>
 
 </html>
