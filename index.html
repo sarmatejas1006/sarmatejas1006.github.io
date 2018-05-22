@@ -50,7 +50,7 @@
 </head>
 
 <body>
-<!-- Modal -->
+<!-- Modal Success-->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -68,7 +68,29 @@
         </div>
     </div>
 </div>
-<!-- Modal -->
+<!-- Modal Success-->
+
+<!-- Modal Resume-->
+<div id="myModal" class="modal fade" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center h4"><strong>Resume: May 2018</strong></h4>
+                <div>
+                    <a class="btn-green btn-md btn" href="TejasCVQ22018.pdf" target="_blank"><strong><b class="h6">View Full Screen</b></strong></a>
+                    <button type="button" class="btn-blue btn-md btn" data-dismiss="modal"><strong><b class="h6">Close</b></strong></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <embed src="TejasCVQ22018.pdf" frameborder="0" width="100%" height="640px">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Modal Resume-->
 
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -142,14 +164,13 @@
             <br/>
             <br/>
             <br/>
-            <br/>
             <!--Grid row-->
             <div class="row wow fadeIn" id="email">
 
                 <!--Grid column-->
-                <div class="col-md-6 mb-4 white-text text-center text-md-left">
+                <div class="col-md-7 white-text text-center align-content-center  ">
 
-                    <img src="img/profile.jpg " class="img-thumbnail w-100 p-1 mx-auto d-block col-md-10">
+                    <img src="img/profile.jpg " class="img-thumbnail img-responsive w-75 p-1 mx-auto d-block">
                     <br/>
                     <h3 class="display-5 font-weight-bold">Hi! I am Tejas Sarma.</h3>
 
@@ -157,11 +178,10 @@
 
                     <p>
                         <strong><b><i>I try to make data confess, and machines think.</i></b></strong>
-
                         <strong>I am a Computer Science graduate student at the University of Illinois at Chicago, and I am currently seeking internship/co-op opportunities for Fall 2018.</strong>
                     </p>
 
-                    <a href="TejasCVQ22018.pdf" class="btn btn-blue btn-lg" target="_blank"><strong><b>View My Resume</b></strong>
+                    <a data-toggle="modal" data-target="#myModal" class="btn btn-blue btn-lg" target="_blank"><strong><b class="h6">View My Resume</b></strong>
                         <i class="fa fa-file-pdf ml-2"></i>
                     </a>
 
@@ -169,7 +189,7 @@
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-md-6 col-xl-6 mb-lg-5">
+                <div class="col-md-5">
                     <br/>
 
                     <!--Card-->
@@ -180,35 +200,30 @@
 
                             <!-- Form -->
                             <form name="">
-                                <br/>
                                 <!-- Heading -->
-                                <h3 class="dark-grey-text text-center">
+                                <p class="dark-grey-text text-center h5">
                                     <strong>Send me an email if you would like to connect with me!</strong>
-                                </h3>
-                                <br/>
+                                </p>
                                 <hr>
-                                <br/>
 
                                 <div class="md-form">
-                                    <i class="fa fa-user prefix grey-text"></i>
+                                    <i class="fa fa-user prefix indigo-text"></i>
                                     <input type="text" id="form3" class="form-control">
                                     <label for="form3">Your name</label>
                                 </div>
-                                <br/>
                                 <div class="md-form">
-                                    <i class="fa fa-at prefix grey-text"></i>
+                                    <i class="fa fa-at prefix indigo-text"></i>
                                     <input type="text" id="form2" class="form-control">
                                     <label for="form2">Your email address</label>
                                 </div>
-                                <br/>
                                 <div class="md-form">
-                                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                                    <i class="fas fa-pencil-alt prefix indigo-text"></i>
                                     <textarea type="text" id="form8" class="md-textarea"></textarea>
                                     <label for="form8">Your message</label>
                                 </div>
 
                                 <div class="text-center">
-                                    <a class="btn btn-blue font-weight-bold" data-toggle="modal" data-target="#exampleModal"><strong><b>Send</b></strong><i class="fa fa-paper-plane ml-2"></i>
+                                    <a class="btn btn-blue font-weight-bold" data-toggle="modal" data-target="#exampleModal"><strong><b class="h6">Send</b></strong><i class="fa fa-paper-plane ml-2"></i>
                                     </a>
                                 </div>
 
