@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+// the message
+$msg = "First line of text\nSecond line of text";
 
+// use wordwrap() if lines are longer than 70 characters
+$msg = wordwrap($msg,70);
+
+// send email
+mail("sarmatejas1006@gmail.com","My subject",$msg);
+?>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
